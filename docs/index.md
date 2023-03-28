@@ -1,27 +1,28 @@
-# Home
+![](assets/cyverse_logo_2022.svg)
 
-![](images/cyverse_logos_professional.png?raw=true)
+# What is CyVerse?
 
-CyVerse provides life scientists with powerful computational infrastructure to handle huge datasets and complex analyses, thus enabling data-driven discovery. Our extensible platforms provide data storage, bioinformatics tools, image analyses, APIs, and more.
-
-
-## What is Cyberinfrastructure?
-
-Cyberinfrastructure (also known as CI or computational infrastructure) provides solutions to the challenges of large-scale computational science. Just as physical infrastructure such as laboratories makes it possible to collect data, the hardware, software, and people that comprise cyberinfrastructure make it possible to store, share, and analyse data. Using cyberinfrastructure, teams of researchers can attempt to answer questions that previously were unapproachable because the computational requirements were too large or too complex.
-
+[CyVerse](https://cyverse.org) is a powerful computational infrastructure and the people who support its operations. CyVerse was built to handle huge datasets and complex analyses for life sciences research, thus enabling users to make data-driven discoveries.
 
 CyVerse cyberinfrastructure includes:
 
-* A data storage facility
-* An interactive, web-based, analytical platform
-* Web authentication and security services
-* Support for scaling computational algorithms to run on large, high-speed computers
-* Publication of data by issuing persistent identifiers (e.g. DOI)
-* Education and training in how to use cyberinfrastructure
+[de]: assets/de/deIcon.svg
+[data]: assets/de/dataIcon.svg
+[atmo]: assets/de/cacao-04.png
+[ball]: assets/de/cyverse_ball_2022.png
 
-### History
+[![][data]{width=25}](https://cyverse.org/data-store){target=_blank} [Data Storage](https://cyverse.org/data-store){target=_blank} - free allocation space for all users, and fee-based storage services, [contact us](https://user.cyverse.org/requests/2){target=_blank} to help you scale your project.
 
-CyVerse was originally created by the U.S. National Science Foundation in 2008 with the name iPlant Collaborative. From its inception, iPlant quickly grew into a mature organization providing powerful resources and offering scientific and technical support services to researchers nationally and internationally. In 2015, iPlant was rebranded to CyVerse to emphasize an expanded to serve all life sciences.
+[![][de]{width=25}](https://user.cyverse.org/services/2){target=_blank} [Data Science Workbench](https://user.cyverse.org/services/2){target=_blank}  - An interactive, web-based, analytical platform called the "[Discovery Environment](https://de.cyverse.org){target=_blank}"
+
+[![][atmo]{width=25}](https://user.cyverse.org/services/1){target=_blank} [Cloud](https://user.cyverse.org/services/1){target=_blank} - hosted OpenStack virtual machines for computation, analysis, and storage.
+
+[![][ball]{width=25}](https://cyverse.org/ecp){target=_blank} [External Collaborative Partnerships](https://cyverse.org/ecp){target=_blank} - Work with our experienced data scientists and software engineers to scale your algorithms and data onto cloud and high performance compute. [Contact Us](https://user.cyverse.org/requests/3) if you are interested in starting an ECP.
+
+[![][ball]{width=25}](https://cyverse.org/teach){target=_blank} [Education and Training](https://cyverse.org/teach){target=_blank} - learn how to use containers, workflows, and public research cyberinfrastructure from our professional trainers.
+
+[![][ball]{width=25}](https://user.cyverse.org/requests/8){target=_blank} [Cloud Resources](https://user.cyverse.org/requests/8){target=_blank} for running your class or workshop in the cloud.
+
 
 #### Development
 
