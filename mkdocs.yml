@@ -1,4 +1,4 @@
-docs_dir: /docs
+docs_dir: docs/
 site_name: CyVerse Core Software Documentation
 site_url: https://cyverse.github.io/docs
 site_description: CyVerse USA Documentation
