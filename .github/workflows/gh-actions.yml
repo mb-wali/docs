@@ -1,27 +1,21 @@
-name: mkdocs
-
+name: Publish docs via GitHub
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
+    name: Deploy docs
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [ 3.8 ]
-
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
-          architecture: x64
-
-      - name: Install requirements
-        run: python3 -m pip install -r requirements.txt
-        
-      - name: Deploy 🚀
-        run: python3 -m mkdocs gh-deploy --force
+          python-version: 3.9
+      - name: run requirements file
+        run:  pip install -r requirements_mkdocs.txt 
+      - name: Deploy docs
+        run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

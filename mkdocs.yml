@@ -1,16 +1,15 @@
-
-site_name: CyVerse Austria Documentation
-site_url: https://cyverse-austria.github.io/docs
-site_description: CyVerse Austria Documentation
-site_author: 'Mojib Wali'
+site_name: CyVerse Core Software Documentation
+site_url: https://cyverse.github.io/docs
+site_description: CyVerse USA Documentation
+site_author: 'CyVerse USA'
 
 # uncomment to show the github icon in the header with
 # number of forks & stars
-# repo_url: https://github.com/cyverse-austria/docs
+repo_url: https://github.com/cyverse/docs
 edit_uri: ""
 
 # Copyright
-copyright: 'Copyright &copy; 2020-2022 Graz University of Technology'
+copyright: 'Copyright &copy; 2016-2023 CyVerse'
 
 # logos
 medunilogo: 'images/logo-meduni-graz.png'
@@ -29,7 +28,7 @@ theme:
   font:
     text: 'Open Sans'
     code: 'Roboto Mono'
-  logo: 'images/cyverse.png'
+  logo: 'images/cyverse_ball_2022.png'
   favicon: 'images/favicon.ico'
 
 
@@ -37,55 +36,97 @@ nav:
   - Home: 'index.md'
   # - Development:
   #   - overview: 'development/index.md'
-  - services:
-    - kubernetes: 'services/kubernetes/index.md'
-    - keycloak: 'services/keycloak/realm.md'
+  - Services:
+    - Kubernetes: 'services/kubernetes/index.md'
+    - KeyCloak: 'services/keycloak/realm.md'
     - Namespaces: 'services/kubernetes/ns.md'
   - Deployments:
-    - Kubernetes: 'deployments/kubernetes-deploy.md'
-    - UserPortal: 'deployments/userportal.md'
-    - Openebs: 'deployments/openebs.md'
-    - Keycloak: 'deployments/keycloak.md'
+    - Kubernetes (K8s): 'deployments/kubernetes-deploy.md'
+    - User Portal: 'deployments/userportal.md'
+    - OpenEBS: 'deployments/openebs.md'
+    - KeyCloak: 'deployments/keycloak.md'
     - Mail: 'deployments/exim4.md'
     - Redis HA: 'deployments/redis-ha.md'
-    - K8s-resources: 'deployments/k8s-resources.md'
-    - Elasticsearch: 'deployments/elasticsearch.md'
+    - K8s Resources: 'deployments/k8s-resources.md'
+    - ElasticSearch: 'deployments/elasticsearch.md'
     - RabbitMQ: 'deployments/RabbitMQ.md' # move this since its not k8s
     - Unleash: 'deployments/unleash.md'
     - Grouper: 'deployments/grouper.md'
-    - Irods CSI Driver: 'deployments/irods-csi-driver.md'
+    - iRODS CSI Driver: 'deployments/irods-csi-driver.md'
     - Local Exim: 'deployments/local-exim.md'
-    - DiscoveryEnvironment: 'deployments/DiscoveryEnvironment.md'
-    - Vice: 'deployments/vice.md'
+    - Discovery Environment: 'deployments/DiscoveryEnvironment.md'
+    - VICE: 'deployments/vice.md'
     - Jaeger: 'deployments/jaeger.md'
 
   - Databases:
     - Databases: 'database/main.md'
     - DE Database: 'database/de-db.md'
     - Metadata Database: 'database/metadata-db.md'
-    - Keycloak Database: 'database/keycloak-db.md'
+    - KeyCloak Database: 'database/keycloak-db.md'
     - Notifications Database: 'database/notifications-db.md'
     - Unleash Database: 'database/unleash-db.md'
     - Grouper Database: 'database/grouper-db.md'
     - QMS Database: 'database/qms-db.md'
     - Portal Database: 'database/portal-db.md'
 
-
-
 # Customization
 extra:
-  generator: false
   social:
-  - icon: fontawesome/brands/github-alt
-    link: 'https://github.com/cyverse-austria/docs'
-extra_css:
-  - stylesheets/custom.css
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/
+    - icon: fontawesome/brands/github
+      link: https://github.com/cyverse/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/cyverseorg
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/cyverse.org
+    - icon: fontawesome/brands/docker
+      link: https://harbor.cyverse.org/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/CyverseOrgProject
+  analytics:
+    provider: google
+    property: G-6WMK2Y07YW
 
 # Extensions
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
   - toc:
       permalink: true
-  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css

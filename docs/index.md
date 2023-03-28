@@ -1,14 +1,8 @@
 # Home
 
-
-Welcome to the CyVerse Austria!
-
-![](images/csm_cyverse_overview.png?raw=true)
+![](images/cyverse_logos_professional.png?raw=true)
 
 CyVerse provides life scientists with powerful computational infrastructure to handle huge datasets and complex analyses, thus enabling data-driven discovery. Our extensible platforms provide data storage, bioinformatics tools, image analyses, APIs, and more.
-
-CyVerse Austria uses open source code from [CyVerse US](https://cyverse.org/) (University of Arizona) and its deployment is funded by [BioTechMed-Graz](https://biotechmedgraz.at/de/). Within the program [Digitale TU Graz](https://www.tugraz.at/tu-graz/universitaet/leitziele-und-schwerpunkte/digitalisierung/digitale-tu-graz-news/) the follow-up project for expansion of CyVerse Austria (Austrian DataLab and Services) is funded by the BMBWF
-
 
 
 ## What is Cyberinfrastructure?
