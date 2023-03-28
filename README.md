@@ -1,4 +1,4 @@
-A special thanks to [Mojib Wali](https://github.com/mb-wali) of [CyVerse-Austria](https://www.tugraz.at/sites/cyverse/home), Graz University of Technology, Austria, for creating these Materail MkDocs documents for the global CyVerse developer and maintainer community!
+A special thanks to [Mojib Wali](https://github.com/mb-wali) of [CyVerse-Austria](https://www.tugraz.at/sites/rdm/tools/cat-cyverse-austria), Graz University of Technology, Austria, for creating these Materail MkDocs documents for the global CyVerse developer and maintainer community!
 
 ==========================
  CyVerse Core Software Documentation
